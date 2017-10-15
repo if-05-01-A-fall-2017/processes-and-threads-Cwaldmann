@@ -41,7 +41,15 @@ public class Fibonacci {
 
             @Override
             public void run() {
-                
+                getNumberSingle(n-1);
+            }
+            
+        });
+        Thread t2 = new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                getNumberSingle(n-2);
             }
             
         });
